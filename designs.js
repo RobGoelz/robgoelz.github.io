@@ -2,16 +2,16 @@ let table = $('table');
 
 const addRow = function () {
   table.append("<tr></tr>");
-}
+};
 
 const addCol = function () {
   $( 'tr:last' ).append("<td></td>");
       $('td').attr('class','pixel');
-}
+};
 
 const clearCanvas = function () {
    $('table tr').remove();
-}
+};
 
 // When size is submitted by the user, call makeGrid()
 $('#sizePicker').submit(function makeGrid(event) {
